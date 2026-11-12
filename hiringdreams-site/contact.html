@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us &amp; Talent Portal | Hiring Dreams</title>
+  <meta name="description" content="Get in touch with Hiring Dreams. Inquire about hiring top tech talent or submit your resume to join our premier engineering network.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Us | Hiring Dreams">
+  <meta property="og:description" content="Connect with our recruitment advisors to hire talent or advance your tech career.">
+  <meta property="og:image" content="favicon.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="logo" href="index.html" aria-label="Hiring Dreams Home">
+          <img src="logo.png" alt="Hiring Dreams" class="logo-img" width="128" height="48">
+        </a>
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="why-choose-us.html">Why choose us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="contact.html" class="on">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <button class="theme-toggle" type="button" aria-label="Toggle theme">
+              <span class="theme-icon">🌙</span>
+            </button>
+            <a class="btn" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="phead">
+    <div class="wrap">
+      <h1>Let’s Connect</h1>
+      <p>Whether you’re seeking specialized tech talent to accelerate roadmap delivery or searching for your next career-defining engineering role, our team is here to assist.</p>
+    </div>
+  </div>
+
+  <!-- Contact Section with Form & Info Panel -->
+  <section class="contact-section">
+    <div class="wrap">
+      <div class="contact-layout">
+        
+        <!-- Contact Information Cards -->
+        <div class="contact-info-panel">
+          <div class="contact-card">
+            <h3>📞 Direct Phone Support</h3>
+            <p><a href="tel:+12182100211">+1 (218) 210-0211</a></p>
+            <span style="font-size: 13.5px; color: var(--muted); display: block; margin-top: 6px;">Available Mon–Fri, 8 AM – 6 PM EST</span>
+          </div>
+
+          <div class="contact-card">
+            <h3>✉️ Direct Email</h3>
+            <p><a href="mailto:info@hiringdreams.com">info@hiringdreams.com</a></p>
+            <span style="font-size: 13.5px; color: var(--muted); display: block; margin-top: 6px;">Average response time &lt; 24 business hours</span>
+          </div>
+
+          <div class="contact-card">
+            <h3>🌐 Nationwide Coverage</h3>
+            <p>United States &amp; Global Delivery</p>
+            <span style="font-size: 13.5px; color: var(--muted); display: block; margin-top: 6px;">Supporting onsite, hybrid, and remote teams across all US timezones.</span>
+          </div>
+
+          <div class="contact-card" style="background: var(--amber-soft); border-color: rgba(245, 165, 36, 0.4);">
+            <h3 style="color: var(--ink);">⚡ Need Immediate Placements?</h3>
+            <p style="font-size: 15px; font-weight: normal; color: var(--text);">
+              Call our urgent talent matching desk directly at <a href="tel:+12182100211" style="font-weight: 700; text-decoration: underline;">+1 (218) 210-0211</a> for priority 48-hour candidate delivery.
+            </p>
+          </div>
+
+          <div class="feature-img-wrap" style="max-height: 260px;">
+            <img class="feature-img" style="max-height: 260px;" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=700&q=80" alt="Hiring Dreams technical advisor ready to assist" loading="lazy">
+            <div class="feature-badge-float">
+              <span>👩‍💼</span> Dedicated Recruiter Assigned
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Lead & Candidate Form -->
+        <div class="form-box">
+          <div class="audience-tabs" role="tablist">
+            <button class="audience-tab active" type="button" data-role="employer" role="tab">🏢 I Want to Hire Talent</button>
+            <button class="audience-tab" type="button" data-role="candidate" role="tab">👨‍💻 I Want to Find a Job</button>
+          </div>
+
+          <h3>Send Us a Message</h3>
+          <p class="subtitle">Fill out the brief details below and a dedicated recruiter or advisor will follow up promptly.</p>
+
+          <form id="contactForm">
+            <input type="hidden" id="userType" name="user_type" value="employer">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" class="form-control" placeholder="Jane Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="emailAddr">Work / Contact Email *</label>
+                <input type="email" id="emailAddr" class="form-control" placeholder="jane@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" class="form-control" placeholder="+1 (555) 000-0000">
+              </div>
+              
+              <!-- Employer field -->
+              <div class="form-group employer-only">
+                <label for="companyName">Company Name *</label>
+                <input type="text" id="companyName" class="form-control" placeholder="Acme Technologies">
+              </div>
+
+              <!-- Candidate field -->
+              <div class="form-group candidate-only" style="display: none;">
+                <label for="linkedinUrl">LinkedIn Profile URL</label>
+                <input type="url" id="linkedinUrl" class="form-control" placeholder="https://linkedin.com/in/username">
+              </div>
+            </div>
+
+            <!-- Employer role select -->
+            <div class="form-group employer-only">
+              <label for="roleNeeded">Target Role(s) or Practice Needed</label>
+              <select id="roleNeeded" class="form-control">
+                <option value="">Select a specialty...</option>
+                <option value="fullstack">Full-Stack / Software Engineering</option>
+                <option value="cloud_devops">Cloud &amp; DevOps Engineering</option>
+                <option value="data_ai">Data Science, Analytics &amp; AI/ML</option>
+                <option value="cybersecurity">Cybersecurity &amp; Information Security</option>
+                <option value="ba_pm">Project Management &amp; Business Analysis</option>
+                <option value="consulting">IT Consulting &amp; Managed Squads</option>
+                <option value="other">Other Technical Specialty</option>
+              </select>
+            </div>
+
+            <!-- Candidate role select -->
+            <div class="form-group candidate-only" style="display: none;">
+              <label for="targetTitle">Target Title &amp; Primary Skills</label>
+              <input type="text" id="targetTitle" class="form-control" placeholder="e.g. Senior Backend Engineer (Go / AWS / Kubernetes)">
+            </div>
+
+            <div class="form-group">
+              <label for="messageText">Project Scope / Requirements / Notes *</label>
+              <textarea id="messageText" class="form-control" rows="4" placeholder="Tell us about the role, technical requirements, timeline, or your background..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn lg" style="width: 100%;">Submit Inquiry &rarr;</button>
+          </form>
+
+          <div id="formSuccess" class="form-success-box">
+            <h4>🎉 Thank You!</h4>
+            <p>Your message has been received successfully. A Hiring Dreams technology advisor will review your requirements and get in touch within 24 hours.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="logo" href="index.html" aria-label="Hiring Dreams Home">
+          <img src="logo.png" alt="Hiring Dreams" class="logo-img" width="128" height="48">
+        </a>
+          <p>Where talent meets vision. Premier IT staffing, technical consulting, and managed software solutions across the United States.</p>
+          <div class="footer-socials">
+            <a class="social-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a class="social-link" href="mailto:info@hiringdreams.com" aria-label="Email">✉</a>
+            <a class="social-link" href="tel:+12182100211" aria-label="Phone">📞</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="why-choose-us.html">Why choose us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Practices</h4>
+          <ul>
+            <li><a href="services.html">Full-Stack Engineering</a></li>
+            <li><a href="services.html">Cloud &amp; DevOps</a></li>
+            <li><a href="services.html">Data Science &amp; AI</a></li>
+            <li><a href="services.html">Cybersecurity</a></li>
+            <li><a href="services.html">Staff Augmentation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <ul>
+            <li><a href="tel:+12182100211">+1 (218) 210-0211</a></li>
+            <li><a href="mailto:info@hiringdreams.com">info@hiringdreams.com</a></li>
+            <li><span style="color:#9AA0CF; font-size:14.5px;">Mon – Fri: 8:00 AM – 6:00 PM EST</span></li>
+            <li><span style="color:#9AA0CF; font-size:14.5px;">United States</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span class="current-year">2026</span> Hiring Dreams. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

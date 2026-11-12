@@ -1,0 +1,13 @@
+{
+  "name": "hiringdreams-site",
+  "version": "1.0.0",
+  "description": "Hiring Dreams Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "share": "npx localtunnel --port 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

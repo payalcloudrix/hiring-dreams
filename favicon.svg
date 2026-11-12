@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191E40"/>
+      <stop offset="100%" stop-color="#0E1236"/>
+    </linearGradient>
+  </defs>
+  <!-- Background squircle -->
+  <rect width="64" height="64" rx="14" fill="url(#favBg)"/>
+  
+  <!-- Monogram HD -->
+  <g transform="translate(10, 8) scale(0.85)">
+    <!-- Orange D -->
+    <path fill="#EA712E" fill-rule="evenodd" d="
+      M 16 2
+      L 32 2
+      C 44 2, 50 11, 50 35
+      C 50 59, 44 68, 32 68
+      L 16 68
+      Z
+      M 25 11
+      L 29 11
+      C 35 11, 38 19, 38 35
+      C 38 51, 35 59, 29 59
+      L 25 59
+      Z" />
+    
+    <!-- White H -->
+    <!-- Left vertical stem -->
+    <rect x="0" y="24" width="5.5" height="30" fill="#FFFFFF" />
+    <!-- Horizontal crossbar crossing into D -->
+    <rect x="0" y="36.5" width="31" height="5.5" fill="#FFFFFF" />
+    <!-- Right vertical stem slotted inside D -->
+    <rect x="25" y="12" width="5.5" height="46" fill="#FFFFFF" />
+  </g>
+</svg>
