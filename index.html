@@ -91,16 +91,16 @@
           <h3>In-Demand Roles We Place</h3>
           <span class="board-status">Active Pipeline</span>
         </div>
-        <div class="chips">
-          <span class="selected">Full-Stack Engineers</span>
-          <span>Cloud Architects</span>
-          <span>DevOps Engineers</span>
-          <span>Data Scientists</span>
-          <span>Cybersecurity Leads</span>
-          <span>AI / ML Specialists</span>
-          <span>Agile Scrum Masters</span>
-          <span>UI / UX Engineers</span>
-          <span>Business Systems Analysts</span>
+        <div class="chips" role="group" aria-label="In-demand roles we place">
+          <button type="button" class="role-chip selected" data-role="full-stack" aria-expanded="false" aria-controls="roleProfileCard">Full-Stack Engineers</button>
+          <button type="button" class="role-chip" data-role="cloud-architects" aria-expanded="false" aria-controls="roleProfileCard">Cloud Architects</button>
+          <button type="button" class="role-chip" data-role="devops" aria-expanded="false" aria-controls="roleProfileCard">DevOps Engineers</button>
+          <button type="button" class="role-chip" data-role="data-scientists" aria-expanded="false" aria-controls="roleProfileCard">Data Scientists</button>
+          <button type="button" class="role-chip" data-role="cybersecurity" aria-expanded="false" aria-controls="roleProfileCard">Cybersecurity Leads</button>
+          <button type="button" class="role-chip" data-role="ai-ml" aria-expanded="false" aria-controls="roleProfileCard">AI / ML Specialists</button>
+          <button type="button" class="role-chip" data-role="scrum-masters" aria-expanded="false" aria-controls="roleProfileCard">Agile Scrum Masters</button>
+          <button type="button" class="role-chip" data-role="ui-ux" aria-expanded="false" aria-controls="roleProfileCard">UI / UX Engineers</button>
+          <button type="button" class="role-chip" data-role="business-analysts" aria-expanded="false" aria-controls="roleProfileCard">Business Systems Analysts</button>
         </div>
       </div>
     </div>
@@ -479,6 +479,23 @@
       </div>
     </div>
   </footer>
+
+  <!-- Interactive Role Profile Card -->
+  <div id="roleProfileCard" class="role-profile-card" role="region" aria-labelledby="roleCardTitle" aria-hidden="true">
+    <span class="role-card-arrow" aria-hidden="true"></span>
+    <div class="role-card-header">
+      <div class="role-card-heading">
+        <h4 class="role-card-title" id="roleCardTitle"></h4>
+        <span class="role-card-exp" id="roleCardExp"></span>
+      </div>
+      <button type="button" class="role-card-close" aria-label="Close role details">&times;</button>
+    </div>
+    <p class="role-card-desc" id="roleCardDesc"></p>
+    <div class="role-card-expertise">
+      <span class="role-card-label">Key Expertise</span>
+      <div class="role-card-tags" id="roleCardTags"></div>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>
